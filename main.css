@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    height: 80%;
+    width: 100%;
+    clear: both;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    height: 20%;
+    top: 0;
+    background-color: #e6f0ff;
+}
+
+h1 {
+    float: left;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+.headerContainer {
+    float: right;
+}
+
+.nameSideBar {
+    float: left;
+    clear: both;
+    width: 25%;
+    height: 100%;
+    background-color: #f0f5fc;
+}
+
+.catNamesList {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.catName {
+    text-align: center;
+    padding: 10px;
+}
+
+.adminContainer {
+    text-align: center;
+}
+
+.adminButton {
+    border-color: darkcyan;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f0f5fc;
+}
+
+.inputContainer {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    text-align: left;
+}
+
+label {
+    padding: 5px;
+    font-size: 15px;
+}
+
+.cancelButton {
+    margin-right: 5px;
+}
+
+.cancelButton, .submitButton {
+    width: 48%;
+    float: left;
+    margin-top: 10px;
+    background-color: #f0f5fc;
+    border-color: darkcyan;
+}
+
+.catContainer {
+    float: right;
+    width: 75%;
+    height: 100%;
+}
+
+.catPhotoContainer {
+    padding: 40px;
+    width: 100%;
+    height: 85%;
+}
+
+img 
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.catLabelContainer {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.catLabelContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.uniqueCatLabel {
+    float: left;
+    font-size: 30px;
+}
+
+.uniqueCatCounter {
+    float: right;
+    font-size: 20px;
+}
+
+.toggleView {
+    visibility: hidden;
+}

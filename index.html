@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <title>Cat Clicker</title>
+        <meta name='description' content='You get to click on cats!'>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header role='banner'>
+            <h1>Cat Clicker</h1>
+            <div class='headerContainer'>
+                <h2>Total Clicks: <span class='clickNumTotal'>0</span></h2>
+                <button type='button' class='resetButton'>Reset Dat Counter!</button>
+            </div>
+        </header>
+        <main role='main' >
+            <div class='nameSideBar'>
+                <div class='sideBarToggle'></div>
+                <ul class='catNamesList'></ul>
+                <div class='adminContainer'>
+                    <button type='button' class='adminButton'>Admin</button>
+                    <div class='toggleView'>
+                    <form>
+                        <fieldset class='inputContainer'>
+                            <label for='catName' class='catNameLabel'>Cat Name:</label> </br>
+                            <input type='text' id='catName' name='catName'></br>
+                            <label for='catURL' class='catURLLabel'>Cat Photo URL:</label></br>
+                            <input type='text' id='catURL' name='catURL'></br>
+                            <label for='catClicks' class='catClicksLabel'>No. of Cat Clicks:</label></br>
+                            <input type='text' id='catClicks' name='catClicks'></br>
+                            <button type='cancel' class='cancelButton'>Cancel</button>
+                            <button type='submit' class='submitButton'>Submit</button>
+                        </fieldset>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class='catContainer'>
+                <div class='catLabelContainer'>
+                </div>
+                <div class='catPhotoContainer'>
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
